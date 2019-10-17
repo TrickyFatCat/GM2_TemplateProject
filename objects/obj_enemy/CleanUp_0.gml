@@ -1,0 +1,1 @@
+ClearWeaponData(weaponData);
