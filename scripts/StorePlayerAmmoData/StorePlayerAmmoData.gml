@@ -1,12 +1,12 @@
 // Parameters
 enum PlayerAmmo
 {
-	Pistol
+	Spear
 }
 
-#macro PistolAmmoData ammoData[PlayerAmmo.Pistol]
+#macro SpearAmmoData ammoData[PlayerAmmo.Spear]
 
 // Ammo Data
-ammoData[PlayerAmmo.Pistol] = ds_map_create();
-ds_map_add(PistolAmmoData, "ammoCurrent",		100);
-ds_map_add(PistolAmmoData, "ammoCurrentMax",	100);
+ammoData[PlayerAmmo.Spear] = ds_map_create();
+ds_map_add(SpearAmmoData, "ammoCurrent",	1);
+ds_map_add(SpearAmmoData, "ammoCurrentMax",	1);

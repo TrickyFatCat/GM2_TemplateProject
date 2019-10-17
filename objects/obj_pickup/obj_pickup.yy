@@ -43,6 +43,36 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "492a107d-3487-45e6-a682-e6d1d6e687c9"
+        },
+        {
+            "id": "5db93582-13fc-42cc-882d-b58db6420cf2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 12,
+            "eventtype": 7,
+            "m_owner": "492a107d-3487-45e6-a682-e6d1d6e687c9"
+        },
+        {
+            "id": "3504c8f4-ca54-44d5-99d6-40a6113e7582",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 13,
+            "eventtype": 7,
+            "m_owner": "492a107d-3487-45e6-a682-e6d1d6e687c9"
+        },
+        {
+            "id": "8886b4a6-84c9-4a91-9137-9cb1d5211ec4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 14,
+            "eventtype": 7,
+            "m_owner": "492a107d-3487-45e6-a682-e6d1d6e687c9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -61,8 +91,51 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "58fca749-3f9b-4618-8b17-3f048acbc7e3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isPullable",
+            "varType": 3
+        },
+        {
+            "id": "32a0a5c8-5feb-43d1-81a3-5956f2d6978d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "pullVelocityMax",
+            "varType": 0
+        },
+        {
+            "id": "9b36e2b3-7ea9-4bf1-adf1-1b9260ad7875",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.05",
+            "varName": "pullAcceleration",
+            "varType": 0
+        }
+    ],
     "solid": false,
-    "spriteId": "5eee42ed-3cdb-4ae9-bd32-dff4b16bb06e",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

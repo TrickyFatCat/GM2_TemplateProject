@@ -15,7 +15,7 @@ with (obj_base)
 		shader_set_uniform_f(_u_DissolveC2, _DissolveC2[0], _DissolveC2[1], _DissolveC2[2]);
 		texture_set_stage(_u_DissolveTex, _DissolveTex);
 
-		draw_sprite_ext(sprite_index, image_index, x, y - z, drawScaleX, drawScaleY, drawAngle, drawColour, image_alpha);
+		draw_sprite_ext(sprite_index, image_index, x, y - z - offsetY, drawScaleX, drawScaleY, drawAngle, drawColour, image_alpha);
 
 		shader_reset();
 	}

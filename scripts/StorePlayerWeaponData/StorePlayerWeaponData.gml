@@ -1,72 +1,72 @@
 // Parameters
 enum PlayerWeapon
 {
-	Pistol
+	Spear
 }
 
-#macro PistolData weaponData[PlayerWeapon.Pistol]
+#macro SpearData weaponData[PlayerWeapon.Spear]
 
 // Weapons data
-weaponData[PlayerWeapon.Pistol] = ds_map_create();
-ds_map_add(PistolData, "weaponSprite",					spr_weapon);
-ds_map_add(PistolData, "offsetY",						4);
-ds_map_add(PistolData, "laserSightEnabled",				false);
-ds_map_add(PistolData, "isAuto",						true);
-ds_map_add(PistolData, "currentShootMode",				ShootMode.Charge);
+weaponData[PlayerWeapon.Spear] = ds_map_create();
+ds_map_add(SpearData, "weaponSprite",					spr_weapon);
+ds_map_add(SpearData, "offsetY",						4);
+ds_map_add(SpearData, "laserSightEnabled",				false);
+ds_map_add(SpearData, "isAuto",							true);
+ds_map_add(SpearData, "currentShootMode",				ShootMode.Charge);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "bulletObject",					obj_projectileP_pistol);
-ds_map_add(PistolData, "bulletNumber",					1);
-ds_map_add(PistolData, "bulletSpawnPointOffset",		0);
+ds_map_add(SpearData, "bulletObject",					obj_throableP_spear);
+ds_map_add(SpearData, "bulletNumber",					1);
+ds_map_add(SpearData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "damage",						5);
-ds_map_add(PistolData, "heal",							0);
+ds_map_add(SpearData, "damage",							5);
+ds_map_add(SpearData, "heal",							0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "rateOfFireAccelerated",			false);
-ds_map_add(PistolData, "rateOfFireIncrStep",			0);
-ds_map_add(PistolData, "rateOfFireDecrStep",			0);
-ds_map_add(PistolData, "rateOfFireMin",					2);
-ds_map_add(PistolData, "rateOfFireMax",					0);
+ds_map_add(SpearData, "rateOfFireAccelerated",			false);
+ds_map_add(SpearData, "rateOfFireIncrStep",				0);
+ds_map_add(SpearData, "rateOfFireDecrStep",				0);
+ds_map_add(SpearData, "rateOfFireMin",					2);
+ds_map_add(SpearData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "burstRate",						0);
-ds_map_add(PistolData, "burstShotsNumber",				0);
+ds_map_add(SpearData, "burstRate",						0);
+ds_map_add(SpearData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "castExecuteCount",				0);
-ds_map_add(PistolData, "castTime",						0);
+ds_map_add(SpearData, "castExecuteCount",				0);
+ds_map_add(SpearData, "castTime",						0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "chargeExecuteCountMin",			1);
-ds_map_add(PistolData, "chargeExecuteCountMax",			0);
-ds_map_add(PistolData, "chargeTime",					1);
-ds_map_add(PistolData, "chargeWaitTime",				0);
-ds_map_add(PistolData, "chargeDamageFactorMax",			0);
-ds_map_add(PistolData, "chargeHealFactorMax",			0);
-ds_map_add(PistolData, "chargeRateFactorMax",			0);
-ds_map_add(PistolData, "chargeBulletNumberFactorMax",	0);
-ds_map_add(PistolData, "chargeVelocityFactorMax",		20);
-ds_map_add(PistolData, "chargeShakeFactorMax",			1.25);
+ds_map_add(SpearData, "chargeExecuteCountMin",			1);
+ds_map_add(SpearData, "chargeExecuteCountMax",			0);
+ds_map_add(SpearData, "chargeTime",						1);
+ds_map_add(SpearData, "chargeWaitTime",					0);
+ds_map_add(SpearData, "chargeDamageFactorMax",			0);
+ds_map_add(SpearData, "chargeHealFactorMax",			0);
+ds_map_add(SpearData, "chargeRateFactorMax",			0);
+ds_map_add(SpearData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(SpearData, "chargeVelocityFactorMax",		20);
+ds_map_add(SpearData, "chargeShakeFactorMax",			1.25);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "spreadIsDynamic",				false);
-ds_map_add(PistolData, "spreadIsUniform",				false);
-ds_map_add(PistolData, "spreadAngleIncrFactor",			0.2);
-ds_map_add(PistolData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(PistolData, "spreadAngleMin",				0);
-ds_map_add(PistolData, "spreadAngleMax",				0);
+ds_map_add(SpearData, "spreadIsDynamic",				false);
+ds_map_add(SpearData, "spreadIsUniform",				false);
+ds_map_add(SpearData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(SpearData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(SpearData, "spreadAngleMin",					0);
+ds_map_add(SpearData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "ammoID",						noone);
-ds_map_add(PistolData, "shootAmmoCost",					0);
+ds_map_add(SpearData, "ammoID",							PlayerAmmo.Spear);
+ds_map_add(SpearData, "shootAmmoCost",					1);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "recoilPower",					0);
-ds_map_add(PistolData, "recoilFactor",					0);
+ds_map_add(SpearData, "recoilPower",					0);
+ds_map_add(SpearData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "hitscanScaleY",					2);
-ds_map_add(PistolData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(PistolData, "projectileVelocityCurrent",		1);
-ds_map_add(PistolData, "projectileVelocityMax",			0);
-ds_map_add(PistolData, "projectileAcceleration",		0);
-ds_map_add(PistolData, "projectileFriction",			0);
-ds_map_add(PistolData, "projectileBounceEnable",		false);
-ds_map_add(PistolData, "projectileBounceFriction",		2);
+ds_map_add(SpearData, "hitscanScaleY",					2);
+ds_map_add(SpearData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(SpearData, "projectileVelocityCurrent",		1);
+ds_map_add(SpearData, "projectileVelocityMax",			0);
+ds_map_add(SpearData, "projectileAcceleration",			0);
+ds_map_add(SpearData, "projectileFriction",				0);
+ds_map_add(SpearData, "projectileBounceEnable",			false);
+ds_map_add(SpearData, "projectileBounceFriction",		2);
 //-----------------------------------------------------------------------------
-ds_map_add(PistolData, "isShackingCamera",				true);
-ds_map_add(PistolData, "angularShakeEnabled",			false);
-ds_map_add(PistolData, "shakeValue",					1);
-ds_map_add(PistolData, "shotShakeFactor",				1);
+ds_map_add(SpearData, "isShackingCamera",				true);
+ds_map_add(SpearData, "angularShakeEnabled",			false);
+ds_map_add(SpearData, "shakeValue",						1);
+ds_map_add(SpearData, "shotShakeFactor",				1);

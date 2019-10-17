@@ -20,4 +20,15 @@ switch (bulletObjectParent)
 	case obj_laser:
 		SetBulletTransform(laserObjects);
 	break;
+	
+	case obj_throwable:
+		if (owner.ammoCurrent == 0)
+		{
+			visible = false;
+		}
+		else
+		{
+			visible = true;
+		}
+	break;
 }

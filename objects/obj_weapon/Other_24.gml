@@ -91,7 +91,7 @@ switch (currentChargeState)
 		{
 			if (!isShooting)
 			{
-				currentChargeState = CastState.Idle;
+				currentChargeState = ChargeState.Idle;
 			}
 		}
 		
