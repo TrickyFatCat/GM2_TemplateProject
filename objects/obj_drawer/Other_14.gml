@@ -2,7 +2,7 @@
 
 with (obj_base)
 {
-	if (visible)
+	if ((visible) && sprite_index != noone)
 	{
 		var _DissolveSprUvs = sprite_get_uvs(sprite_index,image_index);
 

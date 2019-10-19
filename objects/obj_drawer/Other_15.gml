@@ -8,7 +8,7 @@ var _shaderAlpha = shader_get_uniform(_shader, "u_alpha");
 gpu_set_blendmode(bm_add);
 with (obj_base) 
 {
-	if (visible)
+	if ((visible) && sprite_index != noone)
 	{
 		shader_set(_shader);
 		shader_set_uniform_f(_shaderAlpha, flashPower);

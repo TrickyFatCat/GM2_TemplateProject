@@ -12,7 +12,7 @@ if (laserSightEnabled) && (visible)
 
 
 // Draw weapon
-if (visible)
+if ((visible) && weaponSprite != noone)
 {
 	switch (bulletObjectParent)
 	{
