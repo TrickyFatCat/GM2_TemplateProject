@@ -1,2 +1,3 @@
-/// @description Insert description here
-instance_destroy();
+/// @description SetVisibleTrue
+
+visible = true;

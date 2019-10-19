@@ -12,6 +12,7 @@ direction = random_range(0, 359);
 image_angle = direction;
 velocityCurrent = random_range(0.4, velocityMax);
 groundFriction = random_range(0.1, 0.2);
+groundFriction = random_range(0.1, 0.2);
 velocityX = 0;
 velocityY = 0;
 
