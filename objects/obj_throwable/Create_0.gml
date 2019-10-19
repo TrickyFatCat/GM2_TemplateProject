@@ -2,6 +2,8 @@
 event_inherited();
 
 // User events
+#macro MoveThrowableProjectile	 event_user(0)
+#macro CheckCollisions			 event_user(1)
 
 // Damage Parameters
 damage = 0;
@@ -14,3 +16,6 @@ bouncedDirectionDelta = 20;
 // Friction calculations
 frictionEnableTimer = 0;
 frictionEnableTime = set_time(0.1);
+
+hitWall = false;
+damageList = ds_list_create();

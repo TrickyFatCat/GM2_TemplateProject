@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "45f10b93-8afb-4dad-a265-d2ba3fe6380d",
+            "Value": {
+                "id": "f9a3e753-57cc-4aa4-a00a-44582da024e5",
+                "resourcePath": "scripts\\SpawnImpactEffect\\SpawnImpactEffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "463b2ab0-ec54-43ad-93ed-8b99044b370f",
             "Value": {
                 "id": "cdf0c1d8-fffc-48d7-9128-e20b57edd9cb",
@@ -2167,6 +2175,7 @@
         "601db6d7-e2fb-4b1d-b13c-9a8e837a6713",
         "001ad313-bcfe-4f4e-a49f-2c29b81fe829",
         "f5588d59-d7b0-4b70-92c0-58fa9039838b",
+        "45f10b93-8afb-4dad-a265-d2ba3fe6380d",
         "565403bf-94f7-4bb4-bb09-b336c228a779",
         "df95fd09-2d5f-4977-9e7e-21b08eb9c32c",
         "64252168-0fef-4f5a-8efc-73d39d55065f",
