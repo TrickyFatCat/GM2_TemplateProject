@@ -1,8 +1,12 @@
-/// @param bulletsArray
+/// @param bulletsList
 
-var _bulletsArray = argument0;
+var _bulletsList = argument0;
 
-for (var i = 0; i < bulletNumber; i++)
+var _listSize = ds_list_size(_bulletsList);
+
+// Sequence
+for (var i = 0; i < _listSize; i++)
 {
-	instance_destroy(_bulletsArray[i]);
+	var _bullet = ds_list_find_value(_bulletsList, i);
+	instance_destroy(_bullet);
 }

@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
@@ -12,10 +10,6 @@ event_inherited();
 #macro ExecuteStateAction		event_user(5)
 #macro ExecuteStateTrancendence event_user(6)
 #macro ExecuteStateDeath		event_user(7)
-
-// Test Timers
-testTimer = 0;
-testTime = set_time(5);
 
 // Add path
 path = path_add();
@@ -36,6 +30,7 @@ activeWeapon.visible = false;
 // Base states
 enum EnemyState
 {
+	Inactive,
 	Spawn,
 	Idle,
 	TargetSearch,
@@ -45,4 +40,4 @@ enum EnemyState
 	Death
 }
 
-currentState = EnemyState.Idle;
+currentState = EnemyState.Inactive;

@@ -117,6 +117,13 @@ var _bullets = round(bulletNumber * chargeBulletNumberFactorMax);
 
 switch (bulletObjectParent)
 {
+	case obj_projectile:
+	case obj_throwable:
+	case obj_melee:
+		hitscanObjects = noone;
+		laserObjects = noone;
+	break;
+	
 	case obj_hitscan:
 		var _listSize = ds_list_size(hitscanObjects);
 		
