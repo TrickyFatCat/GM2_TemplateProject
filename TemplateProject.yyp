@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "20a63ff7-c58e-4c14-a6f2-bb8b4d259600",
+            "Value": {
+                "id": "e9d99735-7859-4e54-8aa5-c79c05554747",
+                "resourcePath": "scripts\\wave\\wave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "213c057e-33cf-4cd4-8a3d-a4f95827be5e",
             "Value": {
                 "id": "3082b28c-fb77-4ca2-9ba7-1f9d4c79c309",
@@ -2142,6 +2150,7 @@
         "ead5c4da-97e0-4d4d-875e-b0988d8a9ab4",
         "4c2a3f0f-f3e8-4f15-a613-181429fe0a95",
         "49afe349-d844-4337-8693-04912085b865",
+        "20a63ff7-c58e-4c14-a6f2-bb8b4d259600",
         "4db1db57-d827-47d3-a4dc-c2fc69c20174",
         "fcf8a7db-2496-4cd4-a78d-6df89b0a8939",
         "f974f49d-ea29-4296-af4f-61a291218582",

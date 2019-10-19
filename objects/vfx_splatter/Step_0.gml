@@ -1,16 +1,19 @@
-move_towards_point(xx, yy, velocity);
+MoveObject(false);
 
-velocity -= 0.1 * global.TimeFactor;
+velocityCurrent = CalculateDeceleratedVelocity(direction, velocityCurrent, groundFriction);
 
-if (velocity <= 0.1)
+if (velocityCurrent <= 0)
 {
 	instance_destroy()
 }
 
-smearTimer--;
-if (smearTimer <= 0)
+smearTimer += global.TimeFactor;
+
+var _checkTimer = check_timer(smearTimer, smearTime);
+
+if (_checkTimer)
 {
-	smearTimer = smearTime;
+	smearTimer = 0;
 	
 	instance_create_layer(x, y, layer, smearObject);
 }
