@@ -10,6 +10,7 @@ event_inherited();
 #macro ExecuteStateAction		event_user(5)
 #macro ExecuteStateTrancendence event_user(6)
 #macro ExecuteStateDeath		event_user(7)
+#macro ExecuteStatePull			event_user(8)
 
 // Add path
 path = path_add();
@@ -36,6 +37,8 @@ enum EnemyState
 	TargetSearch,
 	Move,
 	Action,
+	Stunlock,
+	Pull,
 	Trancendence,
 	Death
 }

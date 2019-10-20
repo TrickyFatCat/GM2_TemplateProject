@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
@@ -25,6 +23,13 @@ switch (currentState)
 	
 	case EnemyState.Action:
 		ExecuteStateAction;
+	break;
+	
+	case EnemyState.Stunlock:
+	break;
+	
+	case EnemyState.Pull:
+		ExecuteStatePull;
 	break;
 	
 	case EnemyState.Trancendence:

@@ -1,15 +1,21 @@
-var _isInList = ds_list_find_index(damageList, other.id);
-if (!_isInList)
+var _listIndex = ds_list_find_index(damageList, other);
+
+if (_listIndex == -1)
 {
-	ds_list_add(damageList, other.id);
+	var _target = other;
 	
-	var _direction = directionCurrent;
-	var _offset = 15;
-	SpawnImpactEffect(_direction, _offset, 45, c_red, 4);
+	ds_list_add(damageList, _target);
 	
-	with (other)
+	with (_target)
 	{
 		DealDamage(other.damage);
 		EnableFlash(c_red, 1);
+		SpawnImpactEffect(directionCurrent, 0, 20, c_red, 4);
+		SpawnImpactEffect(directionCurrent - 180, 0, 20, c_red, 4);
+		SpawnSplatterEffect(x, y, vfx_splatter_blood, 10, 3);
 	}
+	
+	ActivateEnemyPullState(_target, directionCurrent, 45, 4);
 }
+
+show_debug_message(ds_list_size(damageList));

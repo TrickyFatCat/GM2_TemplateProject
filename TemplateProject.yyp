@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "27bd034a-fad6-4cf7-9b4d-11f5b618302e",
+            "Value": {
+                "id": "da7e90bb-fbbc-478c-9b1f-ee92bbcf77c6",
+                "resourcePath": "views\\27bd034a-fad6-4cf7-9b4d-11f5b618302e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "28af404d-81f3-4c28-8f34-fc57a1af4c72",
             "Value": {
                 "id": "9b6dcdde-4384-4488-8649-e74655f154a0",
@@ -1188,6 +1196,14 @@
                 "id": "157c8f8d-f4e4-4a4d-b4bb-70f8083e6fe2",
                 "resourcePath": "sprites\\spr_dissolve_00\\spr_dissolve_00.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9216bade-0ba8-4b4b-926a-b80910b0b9b9",
+            "Value": {
+                "id": "7abc6f5d-d431-45ff-87ef-7c8b7e6d8630",
+                "resourcePath": "scripts\\ActivateEnemyPullState\\ActivateEnemyPullState.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2213,7 +2229,8 @@
         "33b3fd51-36a6-4b4a-b80a-cf5ba47a9fbb",
         "346de417-2d21-4596-8330-c5a7aa2bd817",
         "a3251d29-a3a6-41f5-ab4d-22ef1785dad0",
-        "a5a7512d-818f-4074-a883-15f43b9678e2"
+        "a5a7512d-818f-4074-a883-15f43b9678e2",
+        "9216bade-0ba8-4b4b-926a-b80910b0b9b9"
     ],
     "tutorial": ""
 }

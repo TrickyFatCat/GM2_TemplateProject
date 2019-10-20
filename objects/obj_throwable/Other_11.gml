@@ -1,12 +1,4 @@
-/// @description CollisionCheck
-
-var _spawnOffset = 8
-
-var _offsetX = lengthdir_x(_spawnOffset, directionCurrent);
-var _offsetY = lengthdir_y(_spawnOffset, directionCurrent);
-
-var _x = x + _offsetX;
-var _y = y + _offsetY;
+/// @description WallCollisionCheck
 
 // Collision X
 if (place_meeting(x + velocityX, y, obj_wall_default))
@@ -17,10 +9,7 @@ if (place_meeting(x + velocityX, y, obj_wall_default))
 	}
 	velocityX = 0;
 	
-	hitWall = true;
-	instance_destroy();
-	var _colour = make_color_rgb(211, 191, 169);
-	SpawnImpactEffect(directionCurrent, 15, 45, _colour, 4);
+	ExecuteHitWallSequence;
 }
 
 // Collision Y
@@ -32,8 +21,5 @@ if (place_meeting(x, y + velocityY, obj_wall_default))
 		}
 	velocityY = 0;
 	
-	hitWall = true;
-	instance_destroy();
-	var _colour = make_color_rgb(211, 191, 169);
-	SpawnImpactEffect(directionCurrent, 15, 45, _colour, 4);
+	ExecuteHitWallSequence;
 }

@@ -4,6 +4,7 @@ event_inherited();
 // User events
 #macro MoveThrowableProjectile	 event_user(0)
 #macro CheckCollisions			 event_user(1)
+#macro ExecuteHitWallSequence	 event_user(2)
 
 // Damage Parameters
 damage = 0;

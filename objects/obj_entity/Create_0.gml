@@ -5,9 +5,6 @@ event_inherited();
 currentState = noone;
 
 // Movement parameters
-velocityMax = 0.0;
-acceleration = 0.0;
-groundFriction = 0.0;
 velocityCurrent = 0.0;
 directionCurrent = 0;
 
