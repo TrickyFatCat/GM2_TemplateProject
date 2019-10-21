@@ -5,9 +5,9 @@
 var _step = set_step(0.25);
 var _targetScale = 1.2;
 
-if (isShooting)
+if (activeWeapon.isShooting)
 {
-	isShooting = false;
+	activeWeapon.isShooting = false;
 }
 
 trancendenceProgress = approach_timefactor(trancendenceProgress, 1, _step);
