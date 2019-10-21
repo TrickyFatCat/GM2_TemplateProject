@@ -18,3 +18,6 @@ activeWeapon = noone;
 ammoID = 0;
 ammoCurrent = 0;
 ammoCurrentMax = 0;
+
+// Trancendence parameters
+trancendenceProgress = 0;
