@@ -44,15 +44,13 @@ pullDistance = 500;
 pickupList = ds_list_create();
 
 // Set player weapon
-StorePlayerWeaponData();
-var _lastIndex = array_length_1d(weaponData) - 1;
+var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
 weaponID = irandom_range(0, _lastIndex);
 activeWeapon = instance_create_layer(x, y, layer, obj_weapon_player);
-SetWeapon(activeWeapon, weaponID);
+SetPlayerWeapon(activeWeapon, weaponID);
 
 // Set player weapon ammo
-StorePlayerAmmoData();
-SetAmmoParameters(activeWeapon.ammoID, ammoData);
+SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
 
 // Dissolve settings
 drawAlpha = 0;

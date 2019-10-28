@@ -4,17 +4,17 @@ enum EnemyWeapon
 	Pistol
 }
 
-#macro EnemyPistolData weaponData[EnemyWeapon.Pistol]
+#macro EnemyPistolData global.EnemyWeaponData[EnemyWeapon.Pistol]
 
 // Weapons data
-weaponData[EnemyWeapon.Pistol] = ds_map_create();
-ds_map_add(EnemyPistolData, "weaponSprite",					spr_weapon2);
+global.EnemyWeaponData[EnemyWeapon.Pistol] = ds_map_create();
+ds_map_add(EnemyPistolData, "weaponSprite",					noone);
 ds_map_add(EnemyPistolData, "offsetY",						4);
 ds_map_add(EnemyPistolData, "laserSightEnabled",			false);
 ds_map_add(EnemyPistolData, "isAuto",						true);
 ds_map_add(EnemyPistolData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyPistolData, "bulletObject",					obj_projectileE_pistol);
+ds_map_add(EnemyPistolData, "bulletObject",					obj_laserE_laser);
 ds_map_add(EnemyPistolData, "bulletNumber",					1);
 ds_map_add(EnemyPistolData, "bulletSpawnPointOffset",		3);
 //-----------------------------------------------------------------------------

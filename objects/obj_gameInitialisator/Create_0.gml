@@ -3,7 +3,6 @@
 pcVersion = true;
 
 global.TimeFactor = 1;
-global.Player = noone;
 
 var _array = [];
 
@@ -13,7 +12,8 @@ _array[2] = obj_gameManager;
 _array[3] = obj_battleStateHandler;
 _array[4] = obj_camera;
 _array[5] = obj_drawer;
-_array[6] = obj_gifRecorder;
+_array[6] = obj_gameDataHandler;
+_array[7] = obj_gifRecorder;
 
 var _length = array_length_1d(_array);
 

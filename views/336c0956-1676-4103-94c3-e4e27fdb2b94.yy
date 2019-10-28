@@ -13,7 +13,8 @@
         "eae96874-78ee-470d-8ba5-dd91c07e06bb",
         "f52d23f9-44d2-4881-8485-fbc68153d866",
         "5f8e02de-d13b-44c4-8d8c-1a7bb3410717",
-        "5987427c-148a-43b0-994a-16b0a14649e3"
+        "5987427c-148a-43b0-994a-16b0a14649e3",
+        "0f6c18b9-d748-4d49-8522-ed1ef8418e71"
     ],
     "filterType": "GMObject",
     "folderName": "Technicals",

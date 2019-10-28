@@ -17,5 +17,3 @@ if (_listIndex == -1)
 	
 	ActivateEnemyPullState(_target, directionCurrent, 45, 4);
 }
-
-show_debug_message(ds_list_size(damageList));

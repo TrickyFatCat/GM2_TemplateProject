@@ -23,7 +23,7 @@
             "mvc": "1.0",
             "objectId": "e65bc741-4250-4699-9351-a45d11e39675",
             "propertyId": "f690b7f0-cfc7-4571-b0ac-8e418bacc9a1",
-            "value": "200"
+            "value": "1"
         },
         {
             "id": "b06d2fb1-1d1d-472d-91d5-54188cceb4e2",
@@ -40,6 +40,22 @@
             "objectId": "e65bc741-4250-4699-9351-a45d11e39675",
             "propertyId": "efabaa81-1598-4f39-85c1-b007e0a0ab2f",
             "value": "sprite81"
+        },
+        {
+            "id": "124507ab-5382-459b-994e-9647113e4a76",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "39a84839-a339-4e0e-b1f7-372d6d294a74",
+            "propertyId": "305ceabc-0e10-4294-abed-3d33f4d02e4c",
+            "value": "vfx_splatter_blood"
+        },
+        {
+            "id": "013ceecc-35ca-492e-96c3-5fa8c2d6c27b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "39a84839-a339-4e0e-b1f7-372d6d294a74",
+            "propertyId": "94dc8f6c-c522-4dac-a0c4-14068623bb2d",
+            "value": "global.EnemyLootData[LootTable.Test]"
         }
     ],
     "parentObjectId": "39a84839-a339-4e0e-b1f7-372d6d294a74",

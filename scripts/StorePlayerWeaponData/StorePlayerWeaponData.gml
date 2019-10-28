@@ -4,10 +4,10 @@ enum PlayerWeapon
 	Spear
 }
 
-#macro SpearData weaponData[PlayerWeapon.Spear]
+#macro SpearData global.PlayerWeaponData[PlayerWeapon.Spear]
 
 // Weapons data
-weaponData[PlayerWeapon.Spear] = ds_map_create();
+global.PlayerWeaponData[PlayerWeapon.Spear] = ds_map_create();
 ds_map_add(SpearData, "weaponSprite",					spr_weapon);
 ds_map_add(SpearData, "offsetY",						4);
 ds_map_add(SpearData, "laserSightEnabled",				false);
@@ -37,7 +37,7 @@ ds_map_add(SpearData, "chargeExecuteCountMin",			1);
 ds_map_add(SpearData, "chargeExecuteCountMax",			0);
 ds_map_add(SpearData, "chargeTime",						1);
 ds_map_add(SpearData, "chargeWaitTime",					0);
-ds_map_add(SpearData, "chargeDamageFactorMax",			0);
+ds_map_add(SpearData, "chargeDamageFactorMax",			4);
 ds_map_add(SpearData, "chargeHealFactorMax",			0);
 ds_map_add(SpearData, "chargeRateFactorMax",			0);
 ds_map_add(SpearData, "chargeBulletNumberFactorMax",	0);

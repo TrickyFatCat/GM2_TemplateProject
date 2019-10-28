@@ -3,8 +3,10 @@
 // Inherit the parent event
 event_inherited();
 
+SetShadowParametrs(true, 1);
+
 weaponID = EnemyWeapon.Pistol;
-SetWeapon(activeWeapon, weaponID);
-activeWeapon.visible = true;
+SetEnemyWeapon(activeWeapon, weaponID);
+activeWeapon.visible = false;
 activeWeapon.isShooting = false;
 activeWeapon.directionCurrent = 270;

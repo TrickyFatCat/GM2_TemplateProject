@@ -34,3 +34,6 @@ velocityY = 0.0;
 // Gravity immitation parameters
 z = 0.0;
 offsetY = 0.0;
+
+// Loot parameters
+objectToSpawn = noone;

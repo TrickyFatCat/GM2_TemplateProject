@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-var _rollSpeed = 25;
+sprite_index = spr_weapon;
 
-drawAngle += _rollSpeed * global.TimeFactor;
+var _rollSpeed = 20;
+
+RollSprite(_rollSpeed);

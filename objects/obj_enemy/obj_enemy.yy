@@ -55,16 +55,6 @@
             "m_owner": "39a84839-a339-4e0e-b1f7-372d6d294a74"
         },
         {
-            "id": "cbfef10f-6b0c-415b-bd68-e8c8648470ca",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 12,
-            "m_owner": "39a84839-a339-4e0e-b1f7-372d6d294a74"
-        },
-        {
             "id": "b3bf5542-8eca-4bad-9c55-77ce9822e2f8",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -232,6 +222,20 @@
             "value": "noone",
             "varName": "splatterVFX",
             "varType": 5
+        },
+        {
+            "id": "94dc8f6c-c522-4dac-a0c4-14068623bb2d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "global.EnemyLootData[LootTable.Test]",
+            "varName": "lootTable",
+            "varType": 4
         }
     ],
     "solid": false,
