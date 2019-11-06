@@ -32,8 +32,12 @@ velocityX = 0.0;
 velocityY = 0.0;
 
 // Gravity immitation parameters
+isJumping = false;
 z = 0.0;
+shadowMaxZ = 16;
+velocityZ = 0.4;
 offsetY = 0.0;
+jumpInitialState = noone;
 
 // Loot parameters
 objectToSpawn = noone;

@@ -75,6 +75,34 @@
             "value": "0",
             "varName": "isBounceable",
             "varType": 3
+        },
+        {
+            "id": "f18a62de-ef84-408b-9b45-eb72da16b64d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "jumpVelocity",
+            "varType": 0
+        },
+        {
+            "id": "746539e5-7672-4c2b-b485-d1d06750fc76",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.2",
+            "varName": "gravityZ",
+            "varType": 0
         }
     ],
     "solid": false,
