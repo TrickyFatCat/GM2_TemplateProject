@@ -4,11 +4,12 @@
 event_inherited();
 
 //User events
-#macro DropSequence		event_user(0)
-#macro IdleSequence		event_user(1)
-#macro PullSequence		event_user(2)
-#macro DestroySequence  event_user(3)
-#macro MovePickup		event_user(4)
+#macro DropSequence			event_user(0)
+#macro IdleSequence			event_user(1)
+#macro PullSequence			event_user(2)
+#macro DestroySequence		event_user(3)
+#macro MovePickup			event_user(4)
+#macro ProcessPickupEffect	event_user(5)
 
 //States
 enum PickupState
@@ -19,10 +20,15 @@ enum PickupState
 	Destroy
 }
 
-currentState = PickupState.Idle;
+currentState = PickupState.Drop;
 
 //Drop parameters
 dropSpeed = 0.01;
+initialDirection = 0;
+
+//Movement parameters
+isBounced = false;
+directionCurrent = random_range(0, 360);
 
 //Pulling parameters
 target = noone;

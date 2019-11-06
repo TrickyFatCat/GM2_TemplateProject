@@ -5,12 +5,12 @@
     "name": "obj_pickup_throwable",
     "eventList": [
         {
-            "id": "24689c06-840c-4034-92b5-10ddcdcf1717",
+            "id": "8619302e-bb9e-4306-97b6-6aca0f4e82d4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 12,
+            "enumb": 15,
             "eventtype": 7,
             "m_owner": "5b969360-8435-49ad-b5a3-e08bf02201c2"
         }

@@ -2199,6 +2199,14 @@
             }
         },
         {
+            "Key": "f8975217-965e-4a47-8586-d6b0a9e2921f",
+            "Value": {
+                "id": "5d2a479f-51e9-4154-8855-876757ba67a8",
+                "resourcePath": "scripts\\RestorePlayerAmmo\\RestorePlayerAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f8b9495f-93d3-4f95-8ebf-1696960d2e0e",
             "Value": {
                 "id": "63adfee0-7bfc-4546-811f-90dc16453c33",
@@ -2387,6 +2395,7 @@
         "d119a969-9075-468b-95a2-5a4a8432196a",
         "cee8d3aa-8417-4a3e-a008-b14c660a4566",
         "3b420b64-fb99-4a70-af94-25e6e35d76c8",
+        "f8975217-965e-4a47-8586-d6b0a9e2921f",
         "193ee99e-ebf2-47bf-908e-6a0484663f76",
         "6778e957-0aeb-4aa1-9499-a0c2ee0c3dcc",
         "eabb70bd-8cfc-4222-8b3a-1381d7e75a6c",
