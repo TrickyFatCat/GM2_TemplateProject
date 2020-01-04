@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
@@ -19,5 +17,7 @@ drawAlpha = 0.25;
 revealProgress = 0;
 spawnProgress = 0;
 
-testTime = set_time(5);
-testTimer = 0;
+enemyToSpawn = noone;
+
+occupiedTime = set_time(5);
+occupiedTimer = 0;

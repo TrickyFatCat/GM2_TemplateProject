@@ -1,11 +1,12 @@
 /// @description StateIdleController
 
-testTimer += global.TimeFactor;
-		
-var _checkTimer = check_timer(testTimer, testTime)
-		
-if (_checkTimer)
+var _delayIsOver = check_timer(activationTimer, activationDelay);
+
+if (!_delayIsOver)
 {
-	testTimer = 0;
-	currentState = EnemyState.TargetSearch;
+	activationTimer = increase_timer(activationTimer);
+}
+else
+{
+	//currentState = EnemyState.TargetSearch;	
 }

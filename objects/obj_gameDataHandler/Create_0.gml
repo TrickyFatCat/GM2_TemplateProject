@@ -3,4 +3,5 @@ global.GameData = id;
 StorePlayerWeaponData();
 StorePlayerAmmoData();
 StoreEnemyWeaponData();
-StoreEnemyLootData();
+StoreLootData();
+StoreWaveData();

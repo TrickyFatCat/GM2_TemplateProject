@@ -233,8 +233,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "global.EnemyLootData[LootTable.Test]",
-            "varName": "lootTable",
+            "value": "LootTable.Test",
+            "varName": "lootTableID",
             "varType": 4
         }
     ],

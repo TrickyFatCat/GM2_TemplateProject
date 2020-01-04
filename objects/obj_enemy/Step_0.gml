@@ -13,16 +13,16 @@ switch (currentState)
 	break;
 	
 	case EnemyState.TargetSearch:
-		ExecuteStateTargetSearch;
+		//ExecuteStateTargetSearch;
 	break;
 	
 	case EnemyState.Move:
 		ChangeSpriteTo(spriteRun);
-		ExecuteStateMove;
+		//ExecuteStateMove;
 	break;
 	
 	case EnemyState.Action:
-		ExecuteStateAction;
+		//ExecuteStateAction;
 	break;
 	
 	case EnemyState.Stunlock:

@@ -1,19 +1,12 @@
-/// @description SpawnStateController
+/// @description StateIdleController
 
-// Parameters 
-var _spawnTime = 1.5;
+var _delayIsOver = check_timer(activationTimer, activationDelay);
 
-// Sequence
-isInvulnerable = true;
-
-ExecuteDissolveIn(_spawnTime);
-	
-with (activeWeapon)
+if (!_delayIsOver)
 {
-	ExecuteDissolveIn(_spawnTime);
+	activationTimer = increase_timer(activationTimer);
 }
-	
-if (dissolvePower == 1)
+else
 {
-	currentState = EnemyState.Idle;
+	currentState = EnemyState.TargetSearch;	
 }

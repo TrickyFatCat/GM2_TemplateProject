@@ -1,3 +1,5 @@
+/// @description Insert description here
+
 // Inherit the parent event
 event_inherited();
 
@@ -19,14 +21,10 @@ pathSpeed = 0.0;
 velocityMax = 2.0;
 acceleration = 0.025;
 groundFriction = 0.025;
+target = global.Player;
 targetDirection = 0.0;
 targetX = 0.0;
 targetY = 0.0;
-
-// Add weapon
-StoreEnemyWeaponData();
-activeWeapon = instance_create_layer(x, y, layer, obj_weapon_enemy);
-activeWeapon.visible = false;
 
 // Base states
 enum EnemyState
@@ -44,3 +42,13 @@ enum EnemyState
 }
 
 currentState = EnemyState.Inactive;
+
+lootTable = global.LootData[lootTableID];
+
+// Activation pause
+activationDelay = set_time(1);
+activationTimer = 0;
+
+// Add Weapon
+activeWeapon = instance_create_layer(x, y, layer, obj_weapon_enemy);
+activeWeapon.visible = false;

@@ -55,7 +55,7 @@
             "mvc": "1.0",
             "objectId": "39a84839-a339-4e0e-b1f7-372d6d294a74",
             "propertyId": "94dc8f6c-c522-4dac-a0c4-14068623bb2d",
-            "value": "global.EnemyLootData[LootTable.Test]"
+            "value": "LootTable.Test"
         }
     ],
     "parentObjectId": "39a84839-a339-4e0e-b1f7-372d6d294a74",

@@ -13,30 +13,28 @@ switch (currentState)
 		
 		if (revealProgress != 1)
 		{
-			var _revealStep = set_step(3);
+			var _revealStep = set_step(1);
 			
 			revealProgress = approach_timefactor(revealProgress, 1, _revealStep);
 			
-			drawAlpha = lerp_timefactor(0.25, 1, revealProgress);
+			drawAlpha = lerp_timefactor(0, 1, revealProgress);
 		}
 		else
 		{
 			currentState = SpawnPointState.Spawn;
+			owner = instance_create_layer(x, y, "entities", enemyToSpawn);
+			owner.currentState = EnemyState.Spawn;
 		}
 	break;
 	
 	case SpawnPointState.Spawn:
 		drawColour = c_orange;
 		
-		if (spawnProgress != 1)
+		var _state = owner.currentState;
+		
+		
+		if (_state >= EnemyState.Idle)
 		{
-			var _spawnStep = set_step(3);
-			
-			spawnProgress = approach_timefactor(spawnProgress, 1, _spawnStep);
-		}
-		else
-		{
-			spawnProgress = 0;
 			currentState = SpawnPointState.Occupied;
 		}
 	break;
@@ -46,25 +44,21 @@ switch (currentState)
 		
 		if (revealProgress != 0)
 		{
-			var _revealStep = set_step(3);
+			var _revealStep = set_step(0.15);
 			
 			revealProgress = approach_timefactor(revealProgress, 0, _revealStep);
 			
-			drawAlpha = lerp_timefactor(0.25, 1, revealProgress);
-		}
-		else
-		{
-			testTimer += global.TimeFactor;
-			
-			var _checkTime = check_timer(testTimer, testTime);
-			
-			if (_checkTime)
-			{
-				testTimer = 0;
-				
-				currentState = SpawnPointState.Active;
-			}
+			drawAlpha = lerp_timefactor(0, 1, revealProgress);
 		}
 		
+		occupiedTimer += global.TimeFactor;
+		
+		var _timerIsOver = check_timer(occupiedTimer, occupiedTime);
+		
+		if (_timerIsOver)
+		{
+			occupiedTimer = 0;
+			currentState = SpawnPointState.Active;
+		}
 	break;
 }
